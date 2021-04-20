@@ -34,13 +34,13 @@
 
             <com.android.wallpaper.widget.PreviewPager
                 android:id="@+id/clock_preview_pager"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
                 android:background="@color/preview_pager_background"
                 app:layout_constrainedHeight="true"
                 app:layout_constraintBottom_toTopOf="@id/options_container"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHeight_max="@dimen/preview_pager_max_height"
+                app:layout_constraintHeight_max="300dp"
                 app:layout_constraintHeight_min="@dimen/preview_pager_min_height"
                 app:layout_constraintVertical_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -50,9 +50,10 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/options_container"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/options_container_height"
+                android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
+                android:layout_marginBottom="170dp"
                 android:scrollbars="vertical"
                 app:layout_constraintBottom_toTopOf="@id/placeholder"
                 app:layout_constraintEnd_toEndOf="parent"
